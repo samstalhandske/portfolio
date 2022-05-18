@@ -15,6 +15,12 @@
     color: var(--dark);
     padding: 0%;
     margin: 0%;
+    text-decoration: none;
+}
+
+body
+{
+    background-color: var(--white);
 }
 
 #canvas
@@ -84,12 +90,32 @@ a:hover
 
 #content
 {
-    display: flex;
+    display: flexbox;
+    text-align: center;
     justify-content: center;
     margin: 2rem 20vw 10vw 20vw;
     min-height: 100vh;
     /* background-color: var(--yellow); */
+
+    animation: fadeInAnimation ease-in 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+#content img
+{
+    max-width: 100%;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 #games
 {
@@ -106,7 +132,7 @@ a:hover
 }
 .game h1
 {
-    font-weight: bold;
+    font-weight: lighter;
 }
 .game iframe
 {
@@ -120,13 +146,14 @@ a:hover
     display: flexbox;
     text-align: center;
     margin: 2rem 20vw 2.5vw 20vw;
-    font-weight: lighter;
+    color: var(--accent);
 }
 
 #footer
 {
+    max-width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: var(--dark);
     min-height: 5rem;
@@ -135,6 +162,7 @@ a:hover
 
 #footer a{
     color: var(--yellow);
+    margin: 8px;
 }
 #footer a:hover{
     color: var(--accent);
