@@ -117,24 +117,24 @@ a:hover
 }
 
 
-#games
+#items
 {
     display: flex;
     flex-direction: column;
 }
 
-.game
+.item
 {
     width: 100%;
     margin-bottom: 10vh;
     display: flexbox;
     text-align: center;
 }
-.game h1
+.item h1
 {
     font-weight: lighter;
 }
-.game iframe
+.item iframe
 {
     width: 50vw;
     height: 50vh;
